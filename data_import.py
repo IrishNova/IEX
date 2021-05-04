@@ -1,3 +1,23 @@
+'''
+This will return a JSON file for the following IEX endpoints:
+
+› Balance Sheet (New Constructs)
+› Cash Flow (New Constructs)
+› Income statement (New Constructs)
+› 5 Year Price History
+› Close Only
+› Ten Years of Annual Income Statements (New Constructs)
+› Today's Price
+› Key Stats
+› General Data
+› Peer Group
+
+It also includes a CPI data import but that is ancillary and included 'as-is'.
+
+5 year price returns a pandas data frame.
+'''
+
+
 import requests
 import pandas as pd
 # import cpi as cp
