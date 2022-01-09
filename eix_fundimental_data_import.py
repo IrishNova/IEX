@@ -32,19 +32,18 @@ z = int(input("Enter number of Quarters: "))
 '''Balance Sheet'''
 api_url = f'https://cloud.iexapis.com/stable/stock/{tkr}/balance-sheet/{z}?token={token}&period=quarter'
 bal_data = requests.get(api_url).json()
-bal_data = bal_T
+
 
 
 '''Cash Flow'''
 cf__url = f'https://cloud.iexapis.com/stable/stock/{tkr}/cash-flow/{z}?token={token}&period=quarter'
 cf_data = requests.get(cf__url).json()
-cf_data = cf_T
+
 
 
 '''Income Statement'''
 inc_url = f'https://cloud.iexapis.com/stable/stock/{tkr}/income/{z}?token={token}&period=quarter'
 inc_data = requests.get(inc_url).json()
-inc_data = inc_T
 
 
 '''5 Year Price history'''
